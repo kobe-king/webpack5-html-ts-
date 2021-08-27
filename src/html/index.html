@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-inner"><%= require('html-loader!./layout/nav.html').default%></div>
+    </header>
+    <aside class="sidebar">
+      <%= require('html-loader!./layout/slider.html').default%>
+    </aside>
+    <div class="top-progress-bar"></div>
+    <main>
+      <div></div>
+      <!-- <a href="b.html">->bbbb</a> -->
+      <!-- <div><%= require('html-loader!./common.html').default%></script></div> -->
+      
+    </main>
+  </div>
+</body>
+
+</html>
